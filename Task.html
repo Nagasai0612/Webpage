@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TASK</title>
+
+        <style>
+
+            body{
+                margin: 3%;
+                background: var(--background-dark, #2F1893);;
+            }
+
+            .menu{
+                margin: auto;
+                width: 60%;
+                padding: 2px;
+                
+                font-size: large;
+                
+            }
+
+            .name{
+                color: var(--colors-white, #FFF);
+                padding: 15px;
+                margin-left: -1.5%;
+                font-size: large;
+                font-weight: 600;
+            }
+
+            .name1
+            {
+                padding: auto;
+                margin-left: 11%;
+                color: var(--colors-white, #FFF);
+                font-family: DM Sans;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px; 
+            }
+
+            .b{
+                color: var(--colors-white, #e2d6e0);
+                border-radius: 15px;
+                text-align: center;
+                font-weight: 800;
+                padding: 6px;
+                margin-left: 25px;
+                background-color: #eb0bcd;
+                
+            }
+
+            .container {
+            max-width: 350px;
+            background-color: #fff;
+         margin-left: 850px;
+         margin-top: 0%;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 24px;
+        }
+
+        .container input[type="text"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 16px;
+            height: 30;
+        }
+
+
+            .container label {
+            display: block;
+            text-align: left;
+            margin: 10px 0;
+        }
+
+        .container input[type="checkbox"] {
+             display: inline-flexbox; 
+            margin-right: 5px;
+        }
+
+        .container input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 16px;
+            cursor: pointer;
+            width: 80%;
+        }
+
+        .container .social-login {
+            margin-top: 20px;
+        }
+
+        .container .social-login a {
+            display: inline-block;
+            background-color: #3b5998;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 16px;
+            width: 70%;
+        }
+
+        .container .social-login a:hover {
+            background-color: #344e86;
+        }
+
+        .box{
+            margin-left: 310px;
+            font-weight: 600;
+            line-height: 56px;
+            font-size: 25px
+            
+        }
+
+        #mini{
+            margin-left: 310px;
+            color: #e2d6e0;
+            line-height: 36px;
+            font-size: large;
+            font-weight: 600;
+        }
+         
+        .b1{
+            margin-left: 300px;
+            color: var(--colors-white, #e2d6e0);
+                border-radius: 15px;
+                text-align: center;
+                font-weight: 800;
+                padding: 6px;
+                background-color: #eb0bcd;
+        }
+
+        .leftdiv
+         {
+         float: left;
+         margin-top: 60px;
+         }
+        
+         .rightdiv
+         {
+         float: top;
+         margin-top: 120px;
+         
+         }
+         div{
+         padding : 10px;
+         
+         
+         }
+        </style>
+    </head>
+    <body>
+
+        <div class="menu">
+            <a class="name">Startup3</a> 
+            <a href="#" class="name1">Overview</a>
+            <a href="#" class="name1">Price</a> 
+            <a href="#" class="name1">Blog</a>
+            <a href="#" class="name1">Feedback</a>
+            <a href="#" class="name1"><button class="b">Purchase</button></a>   
+        </div>
+
+
+        <div class="leftdiv">
+        <div class="box">
+            <h1 style="color: white ">Generate <br>Awesome Web <br>pages</h1></div>
+            <div>
+            <p id="mini">The most important part of the<br> startup is the samples. The <br>samples from a set of 25 usable<br> pages and you can use as is or you can add new blocks</p>
+            <button class="b1">Learn More</button>
+        </div>
+        </div>
+
+        <div class="rightdiv">
+        <div class="container">
+            <h1 style="color: #3b5998 ">Sign Up Now</h1>
+          
+            <form action="login_process.php" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                
+                <label for="remember">
+                    <input type="checkbox" id="remember" name="remember"> I agree to the Terms of Service
+                </label>
+                
+                <input type="submit" value="Login">
+            </form>
+            
+            <div class="social-login" style="width: 100%" >
+               
+                <a href="#" class="twitter-login">Login with Twitter</a>
+            </div>
+        </div>
+    </body>
+</html>
